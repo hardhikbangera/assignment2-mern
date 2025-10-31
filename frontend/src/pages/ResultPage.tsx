@@ -1,0 +1,6 @@
+import React from 'react'; import Header from '../components/Header'; import { useLocation, useNavigate } from 'react-router-dom';
+
+export default function ResultPage(){
+  const { state } = useLocation(); const navigate = useNavigate(); const booking = state?.booking;
+  return (<div className="min-h-screen bg-gray-50"><Header search={''} setSearch={()=>{}} /><main className="max-w-2xl mx-auto px-4 py-16 text-center"><div className="bg-white p-12 rounded shadow"><div className="w-20 h-20 bg-green-500 rounded-full mx-auto mb-4 flex items-center justify-center"><svg className="w-8 h-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7"/></svg></div><h1 className="text-2xl font-bold mb-2">Booking Confirmed</h1><p className="text-gray-600 mb-6">Ref ID: {booking?.booking_reference || 'N/A'}</p><button onClick={()=>navigate('/')} className="px-6 py-2 bg-gray-200 rounded">Back to Home</button></div></main></div>);
+}
