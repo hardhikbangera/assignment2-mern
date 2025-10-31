@@ -207,9 +207,9 @@ Frontend runs on **[http://localhost:5173](http://localhost:5173)**
 ## 📸 Screenshots
 
 
-| Home Page                     | Details Page                        | Checkout                              | Confirmation                                  |
+| Home Page                     | Search Page                        | Details Page                        | Checkout                              | Confirmation                                  |
 | ----------------------------- | ----------------------------------- | ------------------------------------- | --------------------------------------------- |
-| ![Home](screenshots/home.png) | ![Details](screenshots/details.png) | ![Checkout](screenshots/checkout.png) | ![Confirmation](screenshots/confirmation.png) |
+| ![Home](screenshots/home.png) | ![Details](screenshots/search.png) | ![Checkout](screenshots/checkout.png) | ![Confirmation](screenshots/confirmation.png) |
 
 ---
 
