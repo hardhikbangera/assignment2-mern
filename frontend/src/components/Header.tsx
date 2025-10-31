@@ -9,14 +9,13 @@ interface HeaderProps {
 export default function Header({ searchQuery = "", setSearchQuery, onSearch }: HeaderProps) {
   return (
     <header className="bg-white shadow-sm sticky top-0 z-10">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex items-center justify-between gap-4">
-        {/* Logo */}
-        <div className="flex items-center space-x-2 cursor-pointer select-none">
-          <MapPin className="w-7 h-7 text-yellow-500" />
-          <span className="text-xl font-bold">highway delite</span>
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-1 flex items-center justify-between gap-2">
+        {/* ✅ Logo with image + text */}
+        <div className="flex items-center space-x-1 cursor-pointer select-none">
+          <img src="/logo.png" alt="logo" className="w-24 h-24 object-contain" />
         </div>
 
-        {/* Search Bar */}
+        {/* ✅ Search Bar */}
         <div className="flex items-center gap-2 flex-1 max-w-2xl">
           <input
             type="text"
